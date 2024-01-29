@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        Collection<String> fruits = new ArrayList<>();
+
+        // Adding elements
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Mango");
+
+        // Size of the collection
+        System.out.println("Total fruits: " + fruits.size());
+
+        // Iterating over collection
+        for(String fruit : fruits) {
+            System.out.println(fruit);
+        }
+
+        // Checking if an element exists
+        if (fruits.contains("Apple")) {
+            System.out.println("Apple is in the collection");
+        }
+    }
+}
